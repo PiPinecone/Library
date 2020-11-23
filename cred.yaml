@@ -1,6 +1,0 @@
-# This file allows the program access to the database
-
-user: <Username>
-password: <Password of the above user>
-database: <Database>
-collection: <Collection of the above databass>
