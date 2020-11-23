@@ -2,7 +2,7 @@ from pymongo import MongoClient, ReturnDocument
 import yaml
 
 
-with open("config.yaml", 'r') as stream:
+with open("cred.yaml", 'r') as stream:
     data = yaml.safe_load(stream)
     USER = data["username"]
     PASS = data["password"]
