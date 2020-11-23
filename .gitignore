@@ -132,4 +132,4 @@ dmypy.json
 
 # Other stuff
 .idea/
-config.yaml
+DataEdit/config.yaml
