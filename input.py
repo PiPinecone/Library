@@ -1,10 +1,19 @@
 from pymongo import MongoClient, ReturnDocument
-from tempconfig import MURL
+import yaml
 
+
+with open("config.yaml", 'r') as stream:
+    data = yaml.safe_load(stream)
+    USER = data["username"]
+    PASS = data["password"]
+    DB = data["database"]
+    COL = data["collection"]
+
+MURL = f"mongodb+srv://{USER}:{PASS}@cluster0.t22yp.mongodb.net/<dbname>?retryWrites=true&w=majority"
 
 client = MongoClient(MURL)
-db = client.library
-col = db.books
+db = client.DB
+col = db.COL
 
 print("**Please input information**")
 title = input("Title: ")

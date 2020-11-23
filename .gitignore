@@ -133,4 +133,3 @@ dmypy.json
 # Other stuff
 .idea/
 config.yaml
-tempconfig.py
